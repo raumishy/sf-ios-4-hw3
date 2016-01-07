@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayText: UILabel!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var secondaryText: UILabel!
     
     @IBAction func doSomething(sender: AnyObject) {
         // display.text = "Hello World!"
@@ -21,17 +22,23 @@ class ViewController: UIViewController {
         displayText.text = "Hello \(userName!), you're \(userAge!) years old."
     }
     
+    @IBAction func doSomethingElse(sender: AnyObject) {
+        let userAge = Int(age.text!)
+        if userAge >= 21 {
+           secondaryText.text = "You can drink!"
+        } else if userAge >= 18 {
+            secondaryText.text = "You can vote!"
+        } else if userAge >= 16 {
+            secondaryText.text = "You can drive!"
+        } else {
+            secondaryText.text = "Sorry"
+        }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }
+}
+
+
 

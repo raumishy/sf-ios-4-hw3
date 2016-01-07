@@ -28,6 +28,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="doSomething:" destination="BYZ-38-t0r" eventType="touchUpInside" id="70U-yl-R06"/>
+                                    <action selector="doSomethingElse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAw-kc-ZDP"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k6G-hI-wVL">
@@ -40,13 +41,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDd-xh-EHn">
+                                <rect key="frame" x="161" y="168" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="age" destination="QPw-5l-ZmH" id="FO0-bf-jnB"/>
+                        <outlet property="age" destination="QPw-5l-ZmH" id="Mnq-Os-ijv"/>
                         <outlet property="displayText" destination="aDz-lj-P2j" id="gW0-XC-8XL"/>
                         <outlet property="name" destination="k6G-hI-wVL" id="hHV-vg-Qri"/>
+                        <outlet property="secondaryText" destination="hDd-xh-EHn" id="0tc-tO-bc5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
