@@ -11,9 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var displayText: UILabel!
-
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var age: UITextField!
+    
     @IBAction func doSomething(sender: AnyObject) {
-        displayText.text = "Hello World"
+        // display.text = "Hello World!"
+        let userName = name.text
+        let userAge = Int(age.text!)
+        displayText.text = "Hello \(userName!), you're \(userAge!) years old."
     }
     
     
