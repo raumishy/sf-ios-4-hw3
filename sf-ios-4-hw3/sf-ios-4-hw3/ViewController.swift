@@ -24,21 +24,25 @@ class ViewController: UIViewController {
     
     @IBAction func doSomethingElse(sender: AnyObject) {
         let userAge = Int(age.text!)
+//        if userAge >= 21 {
+//           secondaryText.text = "You can drink!"
+//        } else if userAge >= 18 {
+//            secondaryText.text = "You can vote!"
+//        } else if userAge >= 16 {
+//            secondaryText.text = "You can drive!"
+//        } else {
+//            secondaryText.text = "Sorry"
+//        }
         if userAge >= 21 {
-           secondaryText.text = "You can drink!"
-        } else if userAge >= 18 {
-            secondaryText.text = "You can vote!"
-        } else if userAge >= 16 {
-            secondaryText.text = "You can drive!"
+        secondaryText.text = "You can drink, drive, and vote but not at the same time!"
+        } else if userAge >= 18 && userAge <= 20 {
+        secondaryText.text = "You can drive and vote!"
+        } else if userAge >=16 && userAge <= 17 {
+        secondaryText.text = "You can drive!"
         } else {
-            secondaryText.text = "Sorry"
+        secondaryText.text = "Sorry!"
         }
-    
-
-
-
+    }
 }
-}
-
 
 
